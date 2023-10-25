@@ -19,4 +19,8 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(
         Toast.makeText(this@MainActivity, "Hello World", Toast.LENGTH_SHORT).show()
 
     }
+
+    private fun getData() {
+
+    }
 }
