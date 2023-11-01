@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+
 }
 
 android {
@@ -72,6 +73,11 @@ dependencies {
     implementation("io.reactivex.rxjava2:rxjava:2.2.21")
     implementation("io.reactivex:rxandroid:1.2.1")
 
+    // MpChart
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
 
+    val room_version = "2.6.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
 }

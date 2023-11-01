@@ -4,8 +4,8 @@
 
     <data>
         <variable
-            name="vmMain"
-            type="com.maengsi.hellog.screen.main.MainViewModel" />
+            name="vmChart"
+            type="com.maengsi.hellog.screen.chart.ChartViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

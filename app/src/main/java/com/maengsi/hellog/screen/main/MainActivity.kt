@@ -20,6 +20,12 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(
 
     }
 
+    override fun initListener() {
+        viewDataBinding.tvTest.setOnClickListener {
+            Toast.makeText(this@MainActivity, "Hello World2", Toast.LENGTH_SHORT).show()
+        }
+    }
+
     private fun getData() {
 
     }

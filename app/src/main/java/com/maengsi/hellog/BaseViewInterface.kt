@@ -6,4 +6,5 @@ interface BaseViewInterface {
 
     fun initDataBinding()
     fun init(savedInstanceState: Bundle?)
+    fun initListener()
 }

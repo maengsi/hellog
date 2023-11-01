@@ -14,7 +14,7 @@ abstract class BaseActivity<T : ViewDataBinding, VM : BaseViewModel> (
     private val viewModelId : Int
 ) : AppCompatActivity() , BaseViewInterface{
 
-    private val viewDataBinding : T by lazy {
+    val viewDataBinding : T by lazy {
         DataBindingUtil.setContentView(this,resourceId)
     }
     private val viewModel : VM by lazy {
@@ -25,9 +25,11 @@ abstract class BaseActivity<T : ViewDataBinding, VM : BaseViewModel> (
         super.onCreate(savedInstanceState)
         initDataBinding()
         init(savedInstanceState)
+        initListener()
     }
 
-    override fun init(savedInstanceState: Bundle?) {}
+    override fun init(savedInstanceState: Bundle?) {
+    }
 
     override fun initDataBinding() {
         viewDataBinding.also {
